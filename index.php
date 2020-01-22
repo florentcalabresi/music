@@ -44,7 +44,6 @@
                             $CountMusic = 0;
                             foreach($files as $k => $file):
                                 $CountMusic++;
-                                $a = "Carotte";
                                 $getID3 = new getID3;
                                 $ThisFileInfo = $getID3->analyze($file);
                                 getid3_lib::CopyTagsToComments($ThisFileInfo);
@@ -108,7 +107,6 @@
                             ?>
                         </tbody>
                     </table>
-                    <?= str_replace("C", "", $a); ?>
                 </div>
             </div>
         </body>
